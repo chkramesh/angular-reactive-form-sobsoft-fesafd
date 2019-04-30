@@ -78,10 +78,10 @@ import { CdkStepperModule } from '@angular/cdk/stepper';
 //   MatTooltipModule
 // } from '@angular/material';
 
-/**
- * NgModule that includes all Material modules that are required to serve 
- * the Plunker.
- */
+// 
+//  NgModule that includes all Material modules that are required to serve 
+//  the Plunker.
+//  
 
 
 @NgModule({
