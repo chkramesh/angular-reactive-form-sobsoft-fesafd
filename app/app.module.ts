@@ -1,11 +1,36 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { MaterialModule } from './material.module';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  imports:      [ 
+    BrowserModule, 
+    BrowserAnimationsModule, 
+    ReactiveFormsModule, 
+    MaterialModule ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+
+
+
+
+/*
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CurrencyPipe } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule, Http } from '@angular/http';
 import { NgxWebstorageModule } from 'ngx-webstorage';
+import { CdkTableModule } from '@angular/cdk/table';
+import { MaterialModule } from './material.module';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -19,43 +44,46 @@ import { PlatformModule } from '@angular/cdk/platform';
 import { PortalModule } from '@angular/cdk/portal';
 import { ScrollDispatchModule } from '@angular/cdk/scrolling';
 import { CdkStepperModule } from '@angular/cdk/stepper';
-import { CdkTableModule } from '@angular/cdk/table';
-import {
-  MatAutocompleteModule,
-  MatButtonModule,
-  MatButtonToggleModule,
-  MatCardModule,
-  MatCheckboxModule,
-  MatChipsModule,
-  MatDatepickerModule,
-  MatDialogModule,
-  MatExpansionModule,
-  MatGridListModule,
-  MatIconModule,
-  MatInputModule,
-  MatListModule,
-  MatMenuModule,
-  MatNativeDateModule,
-  MatProgressBarModule,
-  MatProgressSpinnerModule,
-  MatRadioModule,
-  MatRippleModule,
-  MatSelectModule,
-  MatSidenavModule,
-  MatSliderModule,
-  MatSlideToggleModule,
-  MatSnackBarModule,
-  MatStepperModule,
-  MatTableModule,
-  MatTabsModule,
-  MatToolbarModule,
-  MatTooltipModule
-} from '@angular/material';
+
+
+// import {
+//   MatAutocompleteModule,
+//   MatButtonModule,
+//   MatButtonToggleModule,
+//   MatCardModule,
+//   MatCheckboxModule,
+//   MatChipsModule,
+//   MatDatepickerModule,
+//   MatDialogModule,
+//   MatExpansionModule,
+//   MatGridListModule,
+//   MatIconModule,
+//   MatInputModule,
+//   MatListModule,
+//   MatMenuModule,
+//   MatNativeDateModule,
+//   MatProgressBarModule,
+//   MatProgressSpinnerModule,
+//   MatRadioModule,
+//   MatRippleModule,
+//   MatSelectModule,
+//   MatSidenavModule,
+//   MatSliderModule,
+//   MatSlideToggleModule,
+//   MatSnackBarModule,
+//   MatStepperModule,
+//   MatTableModule,
+//   MatTabsModule,
+//   MatToolbarModule,
+//   MatTooltipModule
+// } from '@angular/material';
 
 /**
  * NgModule that includes all Material modules that are required to serve 
  * the Plunker.
  */
+
+
 @NgModule({
   exports: [
     // CDK
@@ -70,38 +98,40 @@ import {
     CdkTableModule,
     
     // Material
-    MatAutocompleteModule,
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatCardModule,
-    MatCheckboxModule,
-    MatChipsModule,
-    MatDatepickerModule,
-    MatDialogModule,
-    MatExpansionModule,
-    MatGridListModule,
-    MatIconModule,
-    MatInputModule,
-    MatListModule,
-    MatMenuModule,
-    MatProgressBarModule,
-    MatProgressSpinnerModule,
-    MatRadioModule,
-    MatRippleModule,
-    MatSelectModule,
-    MatSidenavModule,
-    MatSlideToggleModule,
-    MatSliderModule,
-    MatSnackBarModule,
-    MatStepperModule,
-    MatTableModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatTooltipModule,
-    MatNativeDateModule
+    // MatAutocompleteModule,
+    // MatButtonModule,
+    // MatButtonToggleModule,
+    // MatCardModule,
+    // MatCheckboxModule,
+    // MatChipsModule,
+    // MatDatepickerModule,
+    // MatDialogModule,
+    // MatExpansionModule,
+    // MatGridListModule,
+    // MatIconModule,
+    // MatInputModule,
+    // MatListModule,
+    // MatMenuModule,
+    // MatProgressBarModule,
+    // MatProgressSpinnerModule,
+    // MatRadioModule,
+    // MatRippleModule,
+    // MatSelectModule,
+    // MatSidenavModule,
+    // MatSlideToggleModule,
+    // MatSliderModule,
+    // MatSnackBarModule,
+    // MatStepperModule,
+    // MatTableModule,
+    // MatTabsModule,
+    // MatToolbarModule,
+    // MatTooltipModule,
+    // MatNativeDateModule
   ]
 })
-export class MaterialModule { }
+
+
+// export class MaterialModule { }
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, ReactiveFormsModule, NgxWebstorageModule.forRoot(),
@@ -111,3 +141,4 @@ export class MaterialModule { }
   providers:    [ CurrencyPipe ]
 })
 export class AppModule { }
+*/
